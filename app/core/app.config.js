@@ -5,10 +5,10 @@
         .factory('appConfig', [appConfig]);
 
 
-    angular.module('app').config(['AnalyticsProvider', function (AnalyticsProvider) {
-        // Add configuration code as desired
-        AnalyticsProvider.setAccount('UA-101388661-2');  //UU-XXXXXXX-X should be your tracking code
-    }]).run(['Analytics', function(Analytics) { }]);
+    //angular.module('app').config(['AnalyticsProvider', function (AnalyticsProvider) {
+    //    // Add configuration code as desired
+    //    AnalyticsProvider.setAccount('UA-101388661-2');  //UU-XXXXXXX-X should be your tracking code
+    //}]).run(['Analytics', function(Analytics) { }]);
 
     function appConfig() {
         var pageTransitionOpts = [
@@ -29,8 +29,8 @@
         var date = new Date();
         var year = date.getFullYear();
         var main = {
-            brand: 'Expl0rer',
-            name: 'oxarbitrage',
+            brand: 'Hertz-Network (open-explorer)',
+            name: 'Hertz',
             year: year,
             pageTransition: pageTransitionOpts[0], // 0, 1, 2, 3
         };
